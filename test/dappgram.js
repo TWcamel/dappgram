@@ -46,7 +46,7 @@ contract('Dappgram', ([deployer, author, tipper]) => {
 			await dappgram.uploadImg(hash, '', { from: author }).should.be.rejected
 		})
 
-		it('lists of img from customed img struct', async() => {
+		it('lists of imgs from customed img struct', async() => {
 			const img = await dappgram.imgs(imgIncrementalId)
 			assert.equal(img.id.toNumber(), imgIncrementalId.toNumber(), 'id checked')
 			assert.equal(img.IpfsHash, hash, 'Hash checked')
