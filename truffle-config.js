@@ -9,7 +9,7 @@ module.exports = {
 			network_id: "*"
 		},
 		compilers: {
-			solc : {
+			solc: {
 				optimizer: {
 					enable: true,
 					runs: 200
@@ -17,5 +17,4 @@ module.exports = {
 			}
 		}
 	}
-
 };
