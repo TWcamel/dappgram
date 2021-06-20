@@ -10,8 +10,4 @@ library ConvertLib {
         return amount * conversionRate;
     }
 
-	function isEmptyOfStr(string memory str) public pure returns(bool res) {
-		require(bytes(str).length > 0);
-		return res;
-	}
 }
