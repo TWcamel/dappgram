@@ -40,8 +40,8 @@ contract('Dappgram', ([deployer, author, tipper]) => {
 			assert.equal(img.author, author, 'author checked')
 		})
 
-		it('vaild tipping images by sender aka user', async () => {
-			let oldBalance, newBalance, tipForImgOwner
+		it('vaild tipping images by tipper', async () => {
+			let oldBalance, newBalance, tipImgOwner
 			oldBalance = await web3.eth.getBalance(author)
 			oldBalance = new web3.utils.BN(oldBalance)
 
@@ -57,10 +57,10 @@ contract('Dappgram', ([deployer, author, tipper]) => {
 			newBalance = await web3.eth.getBalance(author)
 			newBalance = new web3.utils.BN(newBalance)
 
-			tipForImgOwner = web3.utils.toWei('2', 'Ether')
-			tipForImgOwner = new web3.utils.BN(tipForImgOwner)
+			tipImgOwner = web3.utils.toWei('2', 'Ether')
+			tipImgOwner = new web3.utils.BN(tipImgOwner)
 
-			const expectedBalance = oldBalance.add(tipForImgOwner)
+			const expectedBalance = oldBalance.add(tipImgOwner)
 
 			assert.equal(newBalance.toString(), expectedBalance.toString())
 
