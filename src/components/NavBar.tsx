@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import film from './resources/icons/film.png';
-import Identicon from 'react-identicons';
+import Identicon from 'identicon.js';
 
 const NavBar: React.FC = () => {
 	return (
