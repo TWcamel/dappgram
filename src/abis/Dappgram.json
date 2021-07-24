@@ -227,7 +227,7 @@
         "id": 20,
         "nodeType": "ImportDirective",
         "scope": 176,
-        "sourceUnit": 295,
+        "sourceUnit": 238,
         "src": "54:24:1",
         "symbolAliases": [],
         "unitAlias": ""
@@ -859,10 +859,10 @@
                         "name": "ValidLib",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 294,
+                        "referencedDeclaration": 237,
                         "src": "801:8:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_ValidLib_$294_$",
+                          "typeIdentifier": "t_type$_t_contract$_ValidLib_$237_$",
                           "typeString": "type(library ValidLib)"
                         }
                       },
@@ -873,7 +873,7 @@
                       "lValueRequested": false,
                       "memberName": "isEmptyOfStr",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 253,
+                      "referencedDeclaration": 196,
                       "src": "801:21:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_delegatecall_pure$_t_string_memory_ptr_$returns$_t_bool_$",
@@ -929,10 +929,10 @@
                         "name": "ValidLib",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 294,
+                        "referencedDeclaration": 237,
                         "src": "842:8:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_ValidLib_$294_$",
+                          "typeIdentifier": "t_type$_t_contract$_ValidLib_$237_$",
                           "typeString": "type(library ValidLib)"
                         }
                       },
@@ -943,7 +943,7 @@
                       "lValueRequested": false,
                       "memberName": "isEmptyOfStr",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 253,
+                      "referencedDeclaration": 196,
                       "src": "842:21:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_delegatecall_pure$_t_string_memory_ptr_$returns$_t_bool_$",
@@ -980,7 +980,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 309,
+                          "referencedDeclaration": 252,
                           "src": "910:3:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -1015,10 +1015,10 @@
                         "name": "ValidLib",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 294,
+                        "referencedDeclaration": 237,
                         "src": "887:8:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_ValidLib_$294_$",
+                          "typeIdentifier": "t_type$_t_contract$_ValidLib_$237_$",
                           "typeString": "type(library ValidLib)"
                         }
                       },
@@ -1029,7 +1029,7 @@
                       "lValueRequested": false,
                       "memberName": "isVoidAddress",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 271,
+                      "referencedDeclaration": 214,
                       "src": "887:22:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_delegatecall_pure$_t_address_$returns$_t_bool_$",
@@ -1206,7 +1206,7 @@
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 309,
+                            "referencedDeclaration": 252,
                             "src": "1096:3:1",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
@@ -1355,7 +1355,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 309,
+                          "referencedDeclaration": 252,
                           "src": "1249:3:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -1563,10 +1563,10 @@
                         "name": "ValidLib",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 294,
+                        "referencedDeclaration": 237,
                         "src": "1336:8:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_ValidLib_$294_$",
+                          "typeIdentifier": "t_type$_t_contract$_ValidLib_$237_$",
                           "typeString": "type(library ValidLib)"
                         }
                       },
@@ -1577,7 +1577,7 @@
                       "lValueRequested": false,
                       "memberName": "isVaildIdOfImg",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 293,
+                      "referencedDeclaration": 236,
                       "src": "1336:23:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_delegatecall_pure$_t_uint256_$_t_uint256_$returns$_t_bool_$",
@@ -1758,7 +1758,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 309,
+                          "referencedDeclaration": 252,
                           "src": "1493:3:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -1879,7 +1879,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 309,
+                        "referencedDeclaration": 252,
                         "src": "1531:3:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -2286,7 +2286,7 @@
       },
       {
         "attributes": {
-          "SourceUnit": 295,
+          "SourceUnit": 238,
           "absolutePath": "/home/sam/Documents/dappgram/contracts/ValidLib.sol",
           "file": "./ValidLib.sol",
           "scope": 176,
@@ -3020,7 +3020,7 @@
                               "isPure": false,
                               "lValueRequested": false,
                               "member_name": "isEmptyOfStr",
-                              "referencedDeclaration": 253,
+                              "referencedDeclaration": 196,
                               "type": "function (string memory) pure returns (bool)"
                             },
                             "children": [
@@ -3030,7 +3030,7 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 294,
+                                  "referencedDeclaration": 237,
                                   "type": "type(library ValidLib)",
                                   "value": "ValidLib"
                                 },
@@ -3097,7 +3097,7 @@
                               "isPure": false,
                               "lValueRequested": false,
                               "member_name": "isEmptyOfStr",
-                              "referencedDeclaration": 253,
+                              "referencedDeclaration": 196,
                               "type": "function (string memory) pure returns (bool)"
                             },
                             "children": [
@@ -3107,7 +3107,7 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 294,
+                                  "referencedDeclaration": 237,
                                   "type": "type(library ValidLib)",
                                   "value": "ValidLib"
                                 },
@@ -3174,7 +3174,7 @@
                               "isPure": false,
                               "lValueRequested": false,
                               "member_name": "isVoidAddress",
-                              "referencedDeclaration": 271,
+                              "referencedDeclaration": 214,
                               "type": "function (address) pure returns (bool)"
                             },
                             "children": [
@@ -3184,7 +3184,7 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 294,
+                                  "referencedDeclaration": 237,
                                   "type": "type(library ValidLib)",
                                   "value": "ValidLib"
                                 },
@@ -3215,7 +3215,7 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 309,
+                                  "referencedDeclaration": 252,
                                   "type": "msg",
                                   "value": "msg"
                                 },
@@ -3459,7 +3459,7 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 309,
+                                      "referencedDeclaration": 252,
                                       "type": "msg",
                                       "value": "msg"
                                     },
@@ -3616,7 +3616,7 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 309,
+                                  "referencedDeclaration": 252,
                                   "type": "msg",
                                   "value": "msg"
                                 },
@@ -3745,7 +3745,7 @@
                               "isPure": false,
                               "lValueRequested": false,
                               "member_name": "isVaildIdOfImg",
-                              "referencedDeclaration": 293,
+                              "referencedDeclaration": 236,
                               "type": "function (uint256,uint256) pure returns (bool)"
                             },
                             "children": [
@@ -3755,7 +3755,7 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 294,
+                                  "referencedDeclaration": 237,
                                   "type": "type(library ValidLib)",
                                   "value": "ValidLib"
                                 },
@@ -4030,7 +4030,7 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 309,
+                                  "referencedDeclaration": 252,
                                   "type": "msg",
                                   "value": "msg"
                                 },
@@ -4115,7 +4115,7 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 309,
+                                  "referencedDeclaration": 252,
                                   "type": "msg",
                                   "value": "msg"
                                 },
@@ -4463,14 +4463,14 @@
     "5777": {
       "events": {},
       "links": {
-        "ValidLib": "0x49Cb9000a0BB8FE7dCd469384ca08a1F25AC2883"
+        "ValidLib": "0xAa4e77d985eF15A3432e44dE16030777d2723df8"
       },
-      "address": "0x46e60D3E297c559Ed0c8B396abf7ae30be1E9B6c",
-      "transactionHash": "0xd89fae8ea7c9b7d96fe433eb05cb4763fc9796d4b8c795aacfde34837c7bbedb"
+      "address": "0xb4733709d9f9C085846557b62d0F71c757dF8e29",
+      "transactionHash": "0x7e2233438265734be0eef43bfbe39ba2027188962d2b7cb99515c8df058a5a1f"
     }
   },
   "schemaVersion": "3.4.1",
-  "updatedAt": "2021-07-23T14:24:11.263Z",
+  "updatedAt": "2021-07-24T15:05:33.820Z",
   "networkType": "ethereum",
   "devdoc": {
     "methods": {}

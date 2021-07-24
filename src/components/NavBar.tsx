@@ -3,11 +3,9 @@ import film from '../resources/icons/film.png'
 import Identicon from 'identicon.js';
 import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap';
 
-type GreetingProps = {
-	accountHash: string;
-}
+type accountProps = { accountHash: string; }
 
-export const IdentiNavBar: React.FC<GreetingProps> = ({ accountHash }) => {
+export const IdentiNavBar: React.FC<accountProps> = ({ accountHash }) => {
 	return (
 		<>
 			<Navbar bg="light" expand="lg">
@@ -20,7 +18,7 @@ export const IdentiNavBar: React.FC<GreetingProps> = ({ accountHash }) => {
 						<small id="account">{accountHash}</small>
 						{accountHash
 							? <img
-								alt="red dot"
+								alt="nav-bar-account-hash"
 								className='ml-2'
 								width='30'
 								height='30'
