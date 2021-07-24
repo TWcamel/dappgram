@@ -1,4 +1,3 @@
-import logo from './resources/icons/logo.svg';
 import "./components/scss/index/App.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -8,7 +7,6 @@ import * as web3 from './lib/Web3Lib'
 import * as imgLib from './lib/ImgLib'
 import { ImageContainer } from "./components/imageContainer";
 import { create } from 'ipfs-http-client'
-import { render } from '@testing-library/react';
 
 
 const ipfs = create({ host: 'ipfs.infura.io', port: 5001, protocol: 'https' })
@@ -32,7 +30,7 @@ const App: React.FC = () => {
 				const imagesCount = await dappgram.methods.imgIncrementalId().call();
 				setState((prevState: any) => { return { ...prevState, imagesCount: imagesCount } });
 
-				for (let i = 0; i <= imagesCount; ++i) {
+				for (let i = 1; i <= imagesCount; ++i) {
 					const imgBuffer = await dappgram.methods.imgs(i).call();
 					setImgs((prevImg: any) => { return [...prevImg, imgBuffer] });
 				}
@@ -45,6 +43,10 @@ const App: React.FC = () => {
 		})();
 		return () => { console.log("App component unmounted"); }
 	}, []);
+
+	useEffect(() => {
+		setImgs(imgLib.imgTipAmountFirst(imgs));
+	}, [imgs])
 
 	let captureFile = (e: any) => {
 		e.preventDefault();
@@ -79,11 +81,9 @@ const App: React.FC = () => {
 		state.dapp.methods.tipImg(id)
 			.send({ from: account, value: tipAmount })
 			.on('transactionHash', () => {
-				setImgs(imgLib.imgTipAmountFirst(imgs));
 				setLoading(false);
 			})
 	}
-
 
 	return (
 		<>

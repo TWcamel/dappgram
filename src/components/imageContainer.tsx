@@ -6,6 +6,7 @@ type imgProps = { images: any; captureFile: any; uploadImg: any; tipImgOwner: an
 
 export const ImageContainer: React.FC<imgProps> = ({ images, captureFile, uploadImg, tipImgOwner }) => {
 	const [imgDescription, setImgDescription] = useState<any>('');
+	const [tipImg, setTipImg] = useState<any>(images);
 
 	const handleIpfsUpload = (event: any) => {
 		event.preventDefault()
@@ -14,9 +15,8 @@ export const ImageContainer: React.FC<imgProps> = ({ images, captureFile, upload
 	}
 
 	const handleTipOwner = (event: any) => {
-		let tipAmount = window.web3.utils.toWei("0.1", "Ether")
-		console.log(event.target.name)
-		console.log(event.target.name, tipAmount)
+		const amount = event.target.previousSibling.previousSibling.value
+		let tipAmount = window.web3.utils.toWei(`${amount}`, "Ether")
 		tipImgOwner(event.target.name, tipAmount)
 	}
 
@@ -49,7 +49,6 @@ export const ImageContainer: React.FC<imgProps> = ({ images, captureFile, upload
 				</Row>
 				{
 					images.map((image: any, key: any) => {
-						console.log(image);
 						return (
 							<Row className="justify-content-md-center mt-5">
 								<Col md="auto">
@@ -77,6 +76,7 @@ export const ImageContainer: React.FC<imgProps> = ({ images, captureFile, upload
 												<InputGroup.Text>$</InputGroup.Text>
 												<FormControl
 													placeholder={`now owner has: ${window.web3.utils.fromWei(image.tipAmount.toString(), 'Ether')} `}
+													id={`tip-to-img-owner-${image.id}`}
 												/>
 												<InputGroup.Text>Ether</InputGroup.Text>
 												<Button
