@@ -90,7 +90,7 @@ const App: React.FC = () => {
 			<IdentiNavBar accountHash={account} />
 			<div className="App">
 				{loading ?
-					<div id="loader-loading" className="text-center mt-5">Loading...</div> :
+					<div id="loader-loading" className="text-center mt-5">Loading...🐒</div> :
 					<ImageContainer
 						images={imgs}
 						captureFile={captureFile.bind(this)}
